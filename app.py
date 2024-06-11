@@ -16,7 +16,7 @@ async def main():
     await init()
     logging.basicConfig(level=logging.INFO) # Логирование
 
-    bot = Bot(token="7417666787:AAFXGH9oam0jwqszTetruMa_Hi1Q749HgnM", parse_mode=ParseMode.MARKDOWN) # Сам бот
+    bot = Bot(token="", parse_mode=ParseMode.MARKDOWN) # Сам бот
     dp = Dispatcher() # Диспетчер для Backend бота (я про Backend самой программы))
 
     dp.message.middleware(UserMiddleware())
